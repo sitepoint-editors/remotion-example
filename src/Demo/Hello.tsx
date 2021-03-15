@@ -1,5 +1,3 @@
-import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
-
 const Hello = () => {
 	return (
 		<h1

@@ -1,7 +1,7 @@
 import {Composition, interpolate, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
-import Title from './Demo/Title';
-import Hello from './Demo/Hello';
-import "./Demo/demo.css";
+import Title from './Title';
+import Hello from './Hello';
+import "./demo.css";
 
 const Demo: React.FC<{
 	titleText: string;
@@ -20,15 +20,13 @@ const Demo: React.FC<{
 		}
 	);
 
-	const transitionStart = 25;
-
 	return (
 		<div className="main-container">
 			<div style={{opacity: totalOpacity}}>
 				<Sequence from={0} durationInFrames={videoConfig.durationInFrames / 2}>
 					<Hello/>
 				</Sequence>
-				<Sequence from={transitionStart + 10} durationInFrames={Infinity}>
+				<Sequence from={35} durationInFrames={Infinity}>
 					<Title titleText={titleText} titleColor={titleColor} />
 				</Sequence>
 			</div>

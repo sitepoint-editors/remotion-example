@@ -3,8 +3,7 @@ import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
 const Title: React.FC<{
 	titleText: string;
 	titleColor: string;
-	bottom?: number;
-}> = ({titleText, titleColor, bottom}) => {
+}> = ({titleText, titleColor}) => {
 	const videoConfig = useVideoConfig();
 	const frame = useCurrentFrame();
 	const text = titleText.split(' ').map((t) => ` ${t} `);
@@ -16,7 +15,7 @@ const Title: React.FC<{
 				fontSize: 100,
 				textAlign: 'center',
 				position: 'absolute',
-				bottom: bottom || 160,
+				bottom: 160,
 				width: '100%',
 			}}
 		>

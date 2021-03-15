@@ -5,7 +5,7 @@
 	"scripts": {
 		"start": "remotion preview src/index.tsx",
 		"start:demo": "remotion preview src/index.tsx",
-		"start:starwars": "remotion preview src/starWarsIndex.tsx",
+		"start:starwars": "remotion preview src/starWarsIndex.js",
 		"build": "remotion render src/index.tsx HelloWorld out.mp4",
 		"upgrade": "remotion upgrade",
 		"server": "ts-node server.tsx",
@@ -22,6 +22,7 @@
 		"@types/react": "^17.0.0",
 		"eslint": "^7.15.0",
 		"express": "^4.17.1",
+		"lorem-ipsum": "^2.0.3",
 		"prettier": "^2.2.1",
 		"prettier-plugin-organize-imports": "^1.1.1",
 		"react": "^17.0.1",
