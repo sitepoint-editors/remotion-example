@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"description": "My Remotion video examples",
 	"scripts": {
-		"start": "remotion preview src/index.tsx",
-		"start:demo": "remotion preview src/index.tsx",
+		"start": "remotion preview src/index.js",
+		"start:demo": "remotion preview src/index.js",
 		"start:starwars": "remotion preview src/starWarsIndex.js",
-		"build": "remotion render src/index.tsx HelloWorld out.mp4",
+		"build": "remotion render src/index.js HelloWorld out.mp4",
 		"upgrade": "remotion upgrade",
 		"server": "ts-node server.tsx",
 		"test": "eslint 'src' --ext ts,tsx,js,jsx && tsc"

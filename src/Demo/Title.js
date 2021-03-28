@@ -1,9 +1,6 @@
 import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
 
-const Title: React.FC<{
-	titleText: string;
-	titleColor: string;
-}> = ({titleText, titleColor}) => {
+const Title = ({titleText, titleColor}) => {
 	const videoConfig = useVideoConfig();
 	const frame = useCurrentFrame();
 	const text = titleText.split(' ').map((t) => ` ${t} `);

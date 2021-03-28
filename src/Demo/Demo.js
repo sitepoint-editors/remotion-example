@@ -3,10 +3,7 @@ import Title from './Title';
 import Hello from './Hello';
 import "./demo.css";
 
-const Demo: React.FC<{
-	titleText: string;
-	titleColor: string;
-}> = ({titleText, titleColor}) => {
+const Demo = ({titleText, titleColor}) => {
 	const frame = useCurrentFrame();
 	const videoConfig = useVideoConfig();
 
